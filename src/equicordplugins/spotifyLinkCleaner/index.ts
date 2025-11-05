@@ -50,7 +50,7 @@ const rewrite: MessageSendListener = async (_channelId, msg) => {
 
 export default definePlugin({
     name: "Spotify Link Cleaner",
-    description: "Replaces spotify links with a hyperlinked version including artist name and song name.",
+    description: "Replaces spotify links with a hyperlinked version of artist name and song name.",
     authors: [EquicordDevs.Noah],
     dependencies: ["MessageEventsAPI"],
     start: () => addMessagePreSendListener(rewrite),
